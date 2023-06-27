@@ -1,0 +1,39 @@
+<%- include("partials/header") -%>
+
+
+
+<div class="container-post">
+    
+    <div class="container-img">
+        <img class="img-movie" src="<%= moviePoster %>" alt="<%= movieTitle %>">
+    </div>
+    <div class="container-text">
+    <div class="text-info">
+        <h1><%= movieTitle %></h1>
+        
+            <p>Year: <span><%= movieYear %></span></p>
+            <p>Release: <span><%= movieRelease %></span></p>
+            <p>Runtime: <span><%= movieRuntime %></span></p>
+            <p>Genre: <span><%= movieGenre %></span></p>
+            <p>Directors: <span><%= movieDirector %> </span></p>
+            <p>Writers: <span><%= movieWriter %></span></p>
+            <p>Actors: <span><%= movieActors %></span></p>
+            <p>Awards: <span><%= movieAwards %></span></p>
+        </ul>
+    </div>
+    <div class="rates-info">
+        <div class="imdb">
+            <img class="img-rates" src="/images/imdb.png" alt="imdb"> 
+            <p class="info-p-i"><%= movieimdbRating %>/10 </p>
+        </div>
+        <div class="meta">
+            <img class="img-rates" src="/images/meta.png">
+            <p class="info-p-m"><%= movieMetascore %>/100</p>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<%- include("partials/footer") -%>
+

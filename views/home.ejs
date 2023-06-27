@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOVIES CHECK UP</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+            to right,
+            rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9)),url(/images/background.png);
+      }
+      p {
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 50px;
+        font-weight: 700;
+      }
+      .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+      }
+      .container-title {
+        margin-top: 75px;
+      }
+
+      .container-form {
+        margin: auto;
+        padding-bottom: 200px;
+      }
+
+      .button {
+        margin-top: 30px;
+        width: 120px;
+        height: 55px;
+        background-color: transparent;
+        border: 3px solid rgb(255, 255, 255);
+        font-size: large;
+        color: rgb(255, 255, 255);
+        border-radius: 15px;
+        display: block;
+        margin-left: 500px;
+      }
+      textarea::placeholder {
+        line-height: 30px;
+        text-align: center;
+        color: black;
+        font-weight: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home">
+      <div class="container-title">
+        <p>Movie Comparator</p>
+      </div>
+
+      <div class="container-form">
+        <form action="/" method="post">
+          <textarea
+            name="movieName"
+            id=""
+            cols="150"
+            rows="2"
+            placeholder="Type The Movie Name You Want to Search"
+          ></textarea>
+          <button type="submit" class="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
