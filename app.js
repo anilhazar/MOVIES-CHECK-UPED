@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const http = require("http");
+const _ = require("lodash");
 
 
 const app = express();
@@ -18,7 +19,10 @@ app.get("/movies/:movie", function (req, res) {
     let url = "http://www.omdbapi.com/?apikey=41497896&t=" + x;
     http.get(url, function (response) {
         response.on("data", function (data) {
-            const dataJson = JSON.parse(data)
+            const dataJson = JSON.parse(data);
+            const a = _.lowerCase(x);
+            const b = _.lowerCase(dataJson.Title);
+            
             if (dataJson.Response === "True") {
                 res.render("post.ejs", {
                     movieTitle: dataJson.Title,
@@ -52,18 +56,9 @@ app.post("/", function (req, res) {
 
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
+app.post("/back", function(req,res){
+    res.redirect("/");
+})
 
 
 app.listen(3000, function () {
