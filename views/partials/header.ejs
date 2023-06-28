@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       body {
-        height: 100vh;
+        height: 110vh;
         margin: 0;
         padding: 0;
       }
@@ -16,7 +16,7 @@
       .container-post {
         display: flex;
         width: 100%;
-        height: 100%;
+        height: 100vh;
       }
 
       .container-img {
@@ -24,16 +24,15 @@
       }
 
       .img-movie {
-        flex-basis: 100%;
-        object-fit: contain;
-        height: 100%;
-        width: fit-content;
+        object-fit: cover;
+        height: 100vh;
+        
       }
       .container-text {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: fit-content;
+        width: 100%;
         background-image: linear-gradient(
             to right,
             rgba(50, 47, 47, 0.9),
@@ -41,7 +40,9 @@
           ),
           url(/images/background-post.jpg);
         background-size: cover;
-        flex-basis: 100%;
+        height: 100vh;
+        padding: 10px;
+        
       }
 
       p {
@@ -71,6 +72,8 @@
       }
 
       .text-info {
+        display: flex;
+        justify-content: space-between;
         margin-left: 80px;
         padding: 0;
         text-align: start;
@@ -98,6 +101,54 @@
         margin: 0 0 15px 0;
         color: rgb(147, 135, 135);
       }
+
+      button {
+        width: 100px;
+        height: 55px;
+        background-color: transparent;
+        border: none;
+        font-size: large;
+        color: rgb(255, 255, 255);
+        border-radius: 15px;
+      }
+
+      .back {
+        font-size: 30px;
+        font-weight: 400;
+        color: rgb(244, 241, 86);
+        line-height: 2px;
+      }
+
+@media only screen and (max-width: 600px) {
+  .container-post {
+    flex-direction: column;
+  }
+
+  .container-img {
+    width: fit-content;
+    height: 100%;
+  }
+
+  .img-movie {
+    object-fit: cover;
+  }
+
+  .container-text {
+    height: auto;
+    padding: 20px;
+  }
+
+  .imdb,
+  .meta {
+    margin-right: 0;
+  }
+
+  .text-info {
+    margin-left: 0;
+  }
+}
+
+
     </style>
   </head>
   <body></body>
