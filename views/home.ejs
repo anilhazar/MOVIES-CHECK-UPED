@@ -19,19 +19,17 @@
       }
       .home {
         display: flex;
-        justify-content: center;
+        justify-content: unsafe;
         align-items: center;
         flex-direction: column;
         text-align: center;
         height: 100vh;
       }
-      .container-title {
-        margin-top: 75px;
-      }
-
-      .container-form {
-        margin: auto;
-        padding-bottom: 200px;
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
 
       .button {
@@ -43,8 +41,6 @@
         font-size: large;
         color: rgb(255, 255, 255);
         border-radius: 15px;
-        display: block;
-        margin-left: 500px;
       }
       textarea::placeholder {
         line-height: 30px;
@@ -65,9 +61,9 @@
           <textarea
             name="movieName"
             id=""
-            cols="150"
+            cols="100"
             rows="2"
-            placeholder="Type The Movie Name You Want to Search"
+            placeholder="Type The Movie's Name You Want to Search"
           ></textarea>
           <button type="submit" class="button">Search</button>
         </form>
