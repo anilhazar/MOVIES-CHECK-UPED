@@ -9,8 +9,7 @@
     </div>
     <div class="container-text">
     <div class="text-info">
-        <h1><%= movieTitle %></h1>
-        
+           <div class="te"><h1><%= movieTitle %></h1>
             <p>Year: <span><%= movieYear %></span></p>
             <p>Release: <span><%= movieRelease %></span></p>
             <p>Runtime: <span><%= movieRuntime %></span></p>
@@ -19,7 +18,12 @@
             <p>Writers: <span><%= movieWriter %></span></p>
             <p>Actors: <span><%= movieActors %></span></p>
             <p>Awards: <span><%= movieAwards %></span></p>
-        </ul>
+           </div>
+           <div class="fo">
+            <form action="/back" method="post">
+                <button type="submit" name="buttonC">HOME  <span class="back">☚</span></button>
+            </form>
+           </div>
     </div>
     <div class="rates-info">
         <div class="imdb">
