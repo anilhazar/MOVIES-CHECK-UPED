@@ -1,43 +1,152 @@
-<%- include("partials/header") -%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MOVIES CHECK UP</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        height: 110vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container-post {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .container-img {
+        width: fit-content;
+        height: 100vh;
+      }
+
+      .img-movie {
+        object-fit: cover;
+        height: 100vh;
+        
+      }
+      .container-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        background-image:
+          url(/images/cinema\ background\ 3.jpg);
+        background-size: cover;
+        height: 100vh;
+        padding: 10px;
+        
+      }
+
+      p {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: bolder;
+        color: rgb(188, 197, 197);
+      }
+
+      span {
+        color: rgb(216, 211, 208);
+      }
+
+      .img-rates {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .imdb,
+      .meta {
+        flex-basis: 40%;
+        padding: 0;
+        text-align: center;
+        margin: 0 60px 0 0;
+        height: 25vh;
+      }
+
+      .text-info {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 80px;
+        padding: 0;
+        text-align: start;
+      }
+
+      .rates-info {
+        display: flex;
+        flex-basis: 40%;
+        text-align: start;
+        margin: 0;
+      }
+
+      h1 {
+        text-align: justify;
+        font-size: 50px;
+        color: rgb(249, 249, 249);
+      }
+
+      .info-p-i {
+        margin: 0;
+        color: rgb(219, 216, 216);
+      }
+
+      .info-p-m {
+        margin: 0 0 15px 0;
+        color: rgb(220, 212, 212);
+      }
+
+      button {
+        width: 100px;
+        height: 55px;
+        background-color: transparent;
+        border: none;
+        font-size: large;
+        color: rgb(255, 255, 255);
+        border-radius: 15px;
+      }
+
+      .back {
+        font-size: 30px;
+        font-weight: 400;
+        color: rgb(209, 12, 12);
+        line-height: 2px;
+      }
+
+@media only screen and (max-width: 600px) {
+  .container-post {
+    flex-direction: column;
+  }
+
+  .container-img {
+    width: fit-content;
+    height: 100%;
+  }
+
+  .img-movie {
+    object-fit: cover;
+  }
+
+  .container-text {
+    height: auto;
+    padding: 20px;
+  }
+
+  .imdb,
+  .meta {
+    margin-right: 0;
+  }
+
+  .text-info {
+    margin-left: 0;
+  }
+}
 
 
-
-<div class="container-post">
-    
-    <div class="container-img">
-        <img class="img-movie" src="<%= moviePoster %>" alt="<%= movieTitle %>">
-    </div>
-    <div class="container-text">
-    <div class="text-info">
-           <div class="te"><h1><%= movieTitle %></h1>
-            <p>Year: <span><%= movieYear %></span></p>
-            <p>Release: <span><%= movieRelease %></span></p>
-            <p>Runtime: <span><%= movieRuntime %></span></p>
-            <p>Genre: <span><%= movieGenre %></span></p>
-            <p>Directors: <span><%= movieDirector %> </span></p>
-            <p>Writers: <span><%= movieWriter %></span></p>
-            <p>Actors: <span><%= movieActors %></span></p>
-            <p>Awards: <span><%= movieAwards %></span></p>
-           </div>
-           <div class="fo">
-            <form action="/back" method="post">
-                <button type="submit" name="buttonC">HOME  <span class="back">☚</span></button>
-            </form>
-           </div>
-    </div>
-    <div class="rates-info">
-        <div class="imdb">
-            <img class="img-rates" src="/images/imdb.png" alt="imdb"> 
-            <p class="info-p-i"><%= movieimdbRating %>/10 </p>
-        </div>
-        <div class="meta">
-            <img class="img-rates" src="/images/meta.png">
-            <p class="info-p-m"><%= movieMetascore %>/100</p>
-        </div>
-
-    </div>
-</div>
-</div>
-
-<%- include("partials/footer") -%>
-
+    </style>
+  </head>
+  <body></body>
+</html>
