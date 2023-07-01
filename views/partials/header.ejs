@@ -6,9 +6,12 @@
     <title>MOVIES CHECK UP</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
     <style>
       body {
-        height: 110vh;
+        height: 100vh;
         margin: 0;
         padding: 0;
       }
@@ -17,6 +20,8 @@
         display: flex;
         width: 100%;
         height: 100vh;
+        font-family: 'Limelight', cursive;
+        
       }
 
       .container-img {
@@ -26,19 +31,16 @@
 
       .img-movie {
         object-fit: cover;
-        height: 100vh;
-        
+        height: 100%;
       }
       .container-text {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        background-image:
-          url(/images/cinema\ background\ 3.jpg);
+        background-image: url(/images/cinema\ background\ 3.jpg);
         background-size: cover;
         height: 100vh;
-        padding: 10px;
         
       }
 
@@ -46,11 +48,11 @@
         margin-bottom: 10px;
         font-size: 20px;
         font-weight: bolder;
-        color: rgb(188, 197, 197);
+        color: rgb(223, 248, 248);
       }
 
       span {
-        color: rgb(216, 211, 208);
+        color: rgb(252, 255, 253);
       }
 
       .img-rates {
@@ -86,7 +88,7 @@
       h1 {
         text-align: justify;
         font-size: 50px;
-        color: rgb(249, 249, 249);
+        color: rgb(255, 255, 255);
       }
 
       .info-p-i {
@@ -116,36 +118,34 @@
         line-height: 2px;
       }
 
-@media only screen and (max-width: 600px) {
-  .container-post {
-    flex-direction: column;
-  }
+      @media only screen and (max-width: 600px) {
+        .container-post {
+          flex-direction: column;
+        }
 
-  .container-img {
-    width: fit-content;
-    height: 100%;
-  }
+        .container-img {
+          width: fit-content;
+          height: 100%;
+        }
 
-  .img-movie {
-    object-fit: cover;
-  }
+        .img-movie {
+          object-fit: cover;
+        }
 
-  .container-text {
-    height: auto;
-    padding: 20px;
-  }
+        .container-text {
+          height: auto;
+          padding: 20px;
+        }
 
-  .imdb,
-  .meta {
-    margin-right: 0;
-  }
+        .imdb,
+        .meta {
+          margin-right: 0;
+        }
 
-  .text-info {
-    margin-left: 0;
-  }
-}
-
-
+        .text-info {
+          margin-left: 0;
+        }
+      }
     </style>
   </head>
   <body></body>
