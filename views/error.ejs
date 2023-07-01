@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOVIES CHECK UP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
     <style>
         body {
             background-image: linear-gradient(to right,rgb(0, 0, 0, .9), rgb(0, 0, 0, .9)), url(/images/background.png);
         }
-        .x{
+        .error-container{
             display: flex;
             flex-direction: column;
             justify-content: baseline;
             align-items: center;
             height: 100vh;
             text-align: center;
+            font-family: 'Limelight', cursive;
         }
         p {
             color: white;
@@ -43,9 +47,9 @@
     </style>
 </head>
 <body>
-    <div class="x">
+    <div class="error-container">
         <p>Error</p>
-        <p class="two">Please enter a relative movie title without typos</p>
+        <p class="two">Please type relative movie title without typos</p>
         <form action="/back" method="post">
             <button type="submit" name="buttonC">Try Again</button>
         </form>
