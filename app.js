@@ -28,7 +28,6 @@ app.get("/movies/:movie", function (req, res) {
                     movieTitle: dataJson.Title,
                     movieYear: dataJson.Year,
                     movieRelease: dataJson.Released,
-                    movieRuntime: dataJson.Runtime,
                     movieGenre: dataJson.Genre,
                     movieDirector: dataJson.Director,
                     movieWriter: dataJson.Writer,
