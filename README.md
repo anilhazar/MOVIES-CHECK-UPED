@@ -1,5 +1,5 @@
-## Movies Check Up
-Movies Check Up is a web application that allows users to search for movies and retrieve information about them using the OMDB API. Users can enter the name of a movie they want to search for, and the application will display details such as the title, release year, runtime, genre, directors, writers, actors, awards, and ratings.
+## Movies Infos
+Movies Infos is a web application that allows users to search for movies and retrieve information about them using the OMDB API. Users can enter the name of a movie they want to search for, and the application will display details such as the title, release year, runtime, genre, directors, writers, actors, awards, and ratings.
 
 # Technologies Used
 Express.js: A web application framework for Node.js.
