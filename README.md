@@ -29,6 +29,6 @@ Search for more movies by repeating steps 2-5.
 # Contributing
 Contributions are welcome! If you find any bugs or have suggestions for new features, please create an issue or submit a pull request.
 
-# Note: Feel free to customize this template according to your project's specific needs. Thanks for reviewing my project :^)
+# Note: Feel free to customize this template according to your project's specific requirements. Thanks for reviewing my project :^)
 
 
